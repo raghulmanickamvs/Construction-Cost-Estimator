@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Cement Concrete Calculator</title>
+        
+        <style>
+   
+
+            
+            
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+
+            .column {
+
+    
+              padding: 150px;
+         /* Should be removed. Only for demonstration */
+              margin: 0;
+              color: rgb(250, 244, 244);
+            }
+           
+            
+            
+            /* Clear floats after the columns */
+            
+        </style>
+            
+    </head>
+    <body>
+        <center>
+        <div class="heading" style="background-color: rgb(235, 220, 12);">
+            <h1 style="color: rgb(7, 7, 7);">Cement Concrete Calculator</h1>
+        </div></center>
+            <center>
+              <h2 style="color: white;"><center>TOTAL VOLUME IS {{msg[0]}} m<sup>3</sup></center></h2>
+              <br><br>
+              <table align="center" border=2 style="color: rgb(252, 248, 248);">
+                <tr>
+                    <td><b>MATERIAL</b></td>
+                    <td><b>QUANITY</b></td>
+                </tr>
+                <tr>
+                    <td>CEMENT</td>
+                    <td>{{msg[1]}} bags or {{msg[2]}} Kg</td>
+                </tr>
+                <tr>
+                    <td>SAND</td>
+                    <td>{{msg[3]}} Kg or {{msg[4]}} tons</td>
+                </tr>
+                <tr>
+                    <td>AGGREGATE</td>
+                    <td>{{msg[5]}} kg or {{msg[6]}} tons</td>
+                </tr>
+              </table>
+            </center>
+            <center>
+                <br>
+                <div class="column"><center><embed src={{ piech|safe }} /></center></div>
+            </center>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>CIVIL UNIT CONVERSION CALCULATOR</title>
+       
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+            input[type=number], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            text-align:center;
+            box-sizing: border-box;
+            color: rgb(65, 64, 63);
+            }
+            div{
+                text-align: center;
+            }
+            input[type=submit] {
+            width: 40%;
+            background-color:rgb(245, 245, 21);
+            color: rgb(3, 3, 3);
+            font-weight:bold;
+            font-size: medium;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1 style="color:white;"><center>CIVIL UNIT CONVERSION CALCULATOR</center></h1>
+        <br><br><br><br>
+        <div>
+            <center>
+            <form name="input" method="POST" action="/unit">
+                <br>
+                <label for="type" style="color: white;"><b>CHOOSE CONVERSION TYPE </b> </label>
+                <br>
+                <select name="type">
+                    
+                    <option value=1>Length</option>
+                    <option value=2>Area</option>
+                    <option value=3>Volume</option>
+                </select>
+                <br>
+                
+
+                <label for="value" style="color:white; font-size: medium;"><b>ENTER VALUE (in m/m<sup>2</sup>/m<sup>3</sup>) </b> </label><br>
+                <input id = "value" type="number" name="value" placeholder="Enter value" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="round" style="color:white; font-size: medium;"><b>ENTER DECIMAL PRECISION </b> </label><br>
+                <input id = "round" type="number" name="round" placeholder="Enter decimal precision(example 1,2,3,..)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                
+               <input type="submit" value="CALCULATE">
+            </form>
+            </center>
+        </div>
+    </body>
+</html>

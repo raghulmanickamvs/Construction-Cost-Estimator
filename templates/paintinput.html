@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Paint Calculator</title>
+       
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+            input[type=number], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            text-align:center;
+            box-sizing: border-box;
+            }
+            div{
+                text-align: center;
+            }
+            input[type=submit] {
+            width: 40%;
+            background-color:rgb(245, 245, 21);
+            color: rgb(2, 2, 2);
+            font-weight:bold;
+            font-size: medium;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1 style="color:white;"><center>PAINT WORK CALCULATOR</center></h1>
+        <br><br><br><br>
+        <div>
+            <center>
+            <form name="input" method="POST" action="/paint">
+                <br>
+                <label for="carea" style="color:white; font-size: medium;"><b>ENTER CARPET AREA </b> </label><br>
+                <input id = "carea" type="number" name="carea" placeholder="Enter carpet area(in sqft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="dhieght" style="color:white; font-size: medium;"><b>ENTER DOOR HEIGHT </b> </label><br>
+                <input id = "dhieght" type="number" name="dhieght" placeholder="Enter door height(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="dwidth" style="color:white; font-size: medium;"><b>ENTER DOOR WIDTH  </b> </label><br>
+                <input id = "dwidth" type="number" name="dwidth" placeholder="Enter width(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+               
+                <label for="ndoor" style="color:white; font-size: medium;"><b>ENTER THE NUMBER OF DOORS </b> </label><br>
+                <input id = "ndoor" type="number" name="ndoor" placeholder="Enter number of doors" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+               
+                <label for="whieght" style="color:white; font-size: medium;"><b>ENTER WINDOW HEIGHT </b> </label><br>
+                <input id = "whieght" type="number" name="whieght" placeholder="Enter window height(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="wwidth" style="color:white; font-size: medium;"><b>ENTER WINDOW WIDTH  </b> </label><br>
+                <input id = "wwidth" type="number" name="wwidth" placeholder="Enter window width(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+               
+                <label for="nwindow" style="color:white; font-size: medium;"><b>ENTER THE NUMBER OF WINDOWS </b> </label><br>
+                <input id = "nwindow" type="number" name="nwindow" placeholder="Enter number of windows" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                
+                <input type="submit" value="CALCULATE">
+            </form>
+            </center>
+        </div>
+    </body>
+</html>

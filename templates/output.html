@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Construction cost estimator</title>
+        <!-- add icon link -->
+       
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            .heading{
+                float:initial;
+                width:100%;
+                height:100px;
+                padding:10px;
+               
+            }
+            
+            /* Create three equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 50%;
+              padding: 10px;
+              height: 1100px; /* Should be removed. Only for demonstration */
+              margin: 0;
+              color: rgb(250, 244, 244);
+            }
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+           
+            
+            
+            /* Clear floats after the columns */
+            
+            </style>
+            
+    </head>
+    <body>
+        <div class="heading" style="background-color: rgb(235, 220, 12);">
+            <h1 style="color: rgb(7, 7, 7);">Calculation of Cost | Approx amount of cost for given construction is {{msg[2]}} Rs.</h1>
+        </div>
+        <div class="row">
+            <div class="column" style=>
+              <h2><center>Approx. cost on various work of materials</center></h2>
+              <br><br>
+              <table align="center" border=2 style="color: rgb(252, 248, 248);">
+                    <tr>
+                        <td><h2>COMPONENTS</h2></td>
+                        <td><b>PRICE</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Cement(16.4%)</b></td>
+                        <td><b>{{msg[3]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Sand(12.3%)</b></td>
+                        <td><b>{{msg[4]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Aggregate(7.4%)</b></td>
+                        <td><b>{{msg[5]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Steel(24.6%)</b></td>
+                        <td><b>{{msg[6]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Finishers (16.5 %) (Paint (4.1 %) + Tiles (8.0 %) + Bricks (4.4 %))</b></td>
+                        <td><b>{{msg[7]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Fittings (22.8 %) (Window (3.0 %) + Doors (3.4 %) + Plumbing (5.5 %) + Eletrical (6.8 %) + Sanitary (4.1 %))</b></td>
+                        <td><b>{{msg[8]}}</b></td>
+                    </tr>
+                    <tr>
+                        <td><h3>TOTAL COST</h3></td>
+                        <td><h3>{{msg[2]}}</h3></td>
+                    </tr>
+              </table>
+              <br><br><br>
+              <div><embed src={{ piech|safe }} /></div>
+            </div>
+            
+            <div class="column">
+                <h2><center>Quantity of material required for {{msg[0]}} ft<sup>2</sup></center></h2>
+                <br><br>
+                <table align="center" border=1 style="color:rgb(248, 244, 244);">
+                      <tr>
+                          <td><h2>COMPONENTS</h2></td>
+                          <td><b>QUANTITY</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Cement</b></td>
+                          <td><b>{{msg[9]}} Bags</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Sand</b></td>
+                          <td><b>{{msg[10]}} Ton</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Aggregate</b></td>
+                          <td><b>{{msg[11]}} Ton</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Steel</b></td>
+                          <td><b>{{msg[12]}} Kg</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Paint</b></td>
+                          <td><b>{{msg[13]}} Lt</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Bricks</b></td>
+                          <td><b>{{msg[14]}} Pcs</b></td>
+                      </tr>
+                      <tr>
+                          <td><b>Flooring</b></td>
+                          <td><b>{{msg[15]}} Ft<sup>2</sup></b></td>
+                      </tr>
+                </table>
+                <br><br><br><br><br>
+                <div><embed src={{ chart|safe }} /></div>
+            </div>
+            
+        </div>
+    </body>
+</html>

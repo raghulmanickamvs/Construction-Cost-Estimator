@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Construction cost estimator</title>
+        
+        <style>
+            
+            
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+            .column {
+                padding: 150px;
+                margin: 0;
+                color: rgb(250, 244, 244);
+            }
+           
+            
+            
+            /* Clear floats after the columns */
+            
+        </style>
+            
+    </head>
+    <body>
+        <center>
+        <div class="heading" style="background-color: rgb(235, 220, 12); align-content: center;">
+            <h1 style="color: rgb(7, 7, 7);">FLOORING CALCULATION (TILE CALCULATION) </h1></center>
+        </div>
+            <center>
+            <h2 style="color: rgb(252, 248, 248);"> TOTAL AREA OF FLOORING IS {{msg[4]}} m<sup>2</sup></h2>
+            <table align="center" border=2 style="color: rgb(252, 248, 248);">
+                <tr>
+                    <td><b>MATERIAL</b></td>
+                    <td><b>QUANITY</b></td>
+                </tr>
+                <tr>
+                    <td>TILES</td>
+                    <td>{{msg[7]}} nos</td>
+                </tr>
+                <tr>
+                    <td>CEMENT</td>
+                    <td>{{msg[5]}} bags or {{msg[6]}} kg</td>
+                </tr>
+                <tr>
+                    <td>SAND</td>
+                    <td>{{msg[8]}} kg or {{msg[9]}} tons</td>
+                </tr>
+            </table>
+            </center>
+        <center>
+        <div class="column">
+            <center>
+                <embed src={{ piech|safe }} />
+            </center>
+        </div>
+    </center>
+    </body>
+</html>

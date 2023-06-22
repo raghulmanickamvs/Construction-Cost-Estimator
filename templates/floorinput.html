@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Flooring Calculator</title>
+        
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/27-273030_construction-hd-png-images-backgrounds.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+            input[type=number], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: medium;
+            text-align:center;
+            box-sizing: border-box;
+            }
+            div{
+                text-align: center;
+            }
+            input[type=submit] {
+            width: 40%;
+            background-color:rgb(245, 245, 21);
+            color: rgb(2, 2, 2);
+            font-weight:bold;
+            font-size: medium;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1 style="color:white;"><center>Flooring Calculator(Tiles Calculator)</center></h1>
+        <br><br><br><br>
+        <div>
+            <center>
+            <form name="input" method="POST" action="/floor" onsubmit="return validateForm()">
+                <label for="length" style="color:white; font-size: medium;"><b>ENTER FLOOR LENGTH </b> </label><br>
+                <input id = "length" type="number" name="length" placeholder="Enter floor length(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="width" style="color:white; font-size: medium;"><b>ENTER FLOOR WIDTH </b> </label><br>
+                <input id = "width" type="number" name="width" placeholder="Enter floor width(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="tlength" style="color:white; font-size: medium;"><b>ENTER TILE LENGTH </b> </label><br>
+                <input id = "tlength" type="number" name="tlength" placeholder="Enter Tile length(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <label for="twidth" style="color:white; font-size: medium;"><b>ENTER TILE WIDTH</b> </label><br>
+                <input id = "twidth" type="number" name="twidth" placeholder="Enter tile width(in ft)" pattern="[-+]?[0-9]*[.,]?[0-9]+" required><br><br>
+                <input type="submit" value="CALCULATE">
+            </form>
+            </center>
+        </div>
+    </body>
+</html>
